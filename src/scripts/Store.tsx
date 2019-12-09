@@ -22,7 +22,7 @@ export const initialState: RootState = {
 
 export const Store = createContext<StoreType>({
   state: initialState,
-  dispatch: () => {}
+  dispatch: () => {} // eslint-disable-line @typescript-eslint/no-empty-function
 });
 
 export const StoreProvider: React.FC = ({ children }) => {
